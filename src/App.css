@@ -1,38 +1,137 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(135deg, #003049 0%, #001e2d 100%);
   }
+
+body {
+  background-image: linear-gradient(135deg, #003049 0%, #001e2d 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #f3f3f3;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top-header {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #191919;
   }
-}
+
+  .logo {
+    height: 30px;
+    pointer-events: none;
+  }
+
+  .title {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Germania One, Rubik, Arial, Helvetica, sans-serif;
+  }
+
+  .library {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  .library-title {
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .library-columns {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px;
+  }
+
+  .song{
+    font-size: 14px;
+    padding-left: 10px;
+    color: #f3f3f3;
+  }
+
+  .songs-list:nth-child(even) {
+    background-image: linear-gradient(135deg, #5e5e5e 0%, #454545 100%);
+  }
+
+  .button-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .add-button{
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    height: 25px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #f77f00 0%, #d62828 100%);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    color: #f3f3f3;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+  }
+
+  .add-button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .add-button:active {
+    opacity: 0.5;
+  }
+
+  .column1 {
+    grid-column: span 3 / span 3;
+    font-weight: 600;
+  }
+
+  .column2{
+    grid-column: span 2 / span 2;
+    grid-column-start: 4;
+  }
+
+  .column3{
+    grid-column: span 2 / span 2;
+    grid-column-start: 6;
+  }
+
+  .column4{
+    grid-column: span 2 / span 2;
+    grid-column-start: 8;
+  }
+
+  .column5{
+    grid-column: span 3 / span 3;
+    grid-column-start: 10;
+  }
+
+  .library-column-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    border-left: 1px solid #f3f3f3;
+  }
