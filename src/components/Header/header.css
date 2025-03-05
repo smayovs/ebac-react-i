@@ -1,0 +1,24 @@
+.header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    color: #191919;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    
+}
+
+.logo {
+    height: 30px;
+    pointer-events: none;
+}
+
+.title{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Germania One, Rubik, Arial, Helvetica, sans-serif;
+}

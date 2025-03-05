@@ -1,0 +1,46 @@
+.table-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr repeat(2, 1fr) 0.3fr;
+    gap: 0px;
+}
+
+.song-info {
+font-size: 12px;
+padding-left: 10px;
+color: #f3f3f3;
+}
+
+.songs-list:nth-child(even) {
+background-image: linear-gradient(135deg, #5e5e5e 0%, #454545 100%);
+}
+
+.button-div {
+display: flex;
+align-items: center;
+color: #f3f3f3;
+font-size: 12px;
+padding: 0 5px;
+}
+
+.add-button{
+transition: all 0.3s ease-in-out;
+width: 20px;
+height: 20px;
+border-radius: 50px;
+background-image: linear-gradient(135deg, #f77f00 0%, #d62828 100%);
+outline: none;
+cursor: pointer;
+border: none;
+font-size: 12px;
+color: #f3f3f3;
+font-family: Rubik, Arial, Helvetica, sans-serif;
+}
+
+.add-button:hover {
+transform: translateY(3px);
+box-shadow: none;
+}
+
+.add-button:active {
+opacity: 0.5;
+}

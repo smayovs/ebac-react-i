@@ -1,0 +1,34 @@
+.list {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: #f3f3f3;
+    border-left: 1px solid #f3f3f3;
+    padding-left: 10px;
+  }
+
+.title-tab {
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.list-title {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.search-tab {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.icon {
+  height: 18px;
+  cursor: pointer;
+}
